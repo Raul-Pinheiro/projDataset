@@ -8,4 +8,4 @@
 
 ## Código
 
-Run `python main.py` no terminal para gerar os gráficos
+Rode `python main.py` no terminal para gerar os gráficos
