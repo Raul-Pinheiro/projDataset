@@ -17,15 +17,12 @@ def campos_por_metodologia(sample: int, filepath: str):
 
     pl = planilha['PRP - 01-2023'].sort_values(by=metodologia, ascending=True)
 
-    pyplot.barh(
-
-        pl[metodologia].unique(),
+    pyplot.pie(
         pl.groupby(metodologia)[campo].count(),
+        labels=pl[metodologia].unique(),
+        autopct="%1.1f%%",
+        shadow=True,
+        startangle=90
 
     )
-
-    pyplot.xlabel('Total de Campos')
-
-    pyplot.ylabel('Metodologia')
-
     pyplot.show()
