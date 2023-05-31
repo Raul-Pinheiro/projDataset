@@ -4,7 +4,7 @@
 
 ## Referências
 
-`https://www.gov.br/anp/pt-br/assuntos/royalties-e-outras-participacoes/preco-de-referencia-do-petroleo`
+`https://www.kaggle.com/datasets/peshimaammuzammil/2023-car-model-dataset-all-data-you-need`
 
 ## Código
 
