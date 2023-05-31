@@ -7,7 +7,7 @@ import squarify
 arquivo = "./Car_Models.csv"
 
 
-def grafico_de_arvore(sample: int = 100):
+def grafico_de_arvore(sample: int = 10):
     output = os.path.join(arquivo)
 
     planilha = pd.read_csv(output, nrows=sample)
@@ -22,7 +22,7 @@ def grafico_de_arvore(sample: int = 100):
 
     print(df)
 
-    squarify.plot(sizes=df, label=df.index, color=colors)
+    squarify.plot(sizes=df, label=df.index)
 
     pyplot.title('Economia de combustível por veículo.')
 
